@@ -1,0 +1,39 @@
+﻿@model Slider
+@{
+}
+<div class="row">
+    <div class="col-xl-12">
+        <!-- Product Info Start -->
+        <div class="mb-5">
+            <h2 class="small-title">Create Slide</h2>
+            <div class="card">
+                <div class="card-body">
+                    <form method="post">
+                        <div class="mb-3">
+                            <label asp-for="Title" class="form-label"></label>
+                            <input asp-for="Title" class="form-control">
+                            <span asp-validation-for="Title"></span>
+                        </div>
+                        <div class="mb-3 w-100" data-select2-id="5">
+                            <label asp-for="Description" class="form-label"></label>
+                            <textarea asp-for="Description" class="form-control"></textarea>
+                            <span asp-validation-for="Description"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="DiscountPercent" class="form-label"></label>
+                            <input asp-for="DiscountPercent" class="form-control">
+                            <span asp-validation-for="DiscountPercent"></span>
+                        </div>
+                        <div class="mb-3">
+                            <label asp-for="Image" class="form-label"></label>
+                            <input asp-for="Image" class="form-control">
+                            <span asp-validation-for="Image"></span>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Create</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!-- Product Info End -->
+    </div>
+</div>
